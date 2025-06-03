@@ -21,9 +21,15 @@ Ensure you have the following installed:
 
 git clone https://github.com/Matiks---Data-Analyst-/matiks.git
 
-cd matiks
+**matiks-analytics-dashboard/**
 
-pip install -r requirement.txt 
+├── app.py
+
+├── requirements.txt
+
+├── Matiks - Data Analyst Data - Sheet1.csv
+
+├── README.md
 
 ### Usage
 
