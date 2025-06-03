@@ -1,0 +1,7 @@
+cd matiks-analytics-dashboard
+git init
+git add .
+git commit -m "Initial commit with Streamlit dashboard"
+git remote add origin https://github.com/<your-username>/matiks-analytics-dashboard.git
+git push -u origin main
+```[](https://devcenter.heroku.com/articles/git)
