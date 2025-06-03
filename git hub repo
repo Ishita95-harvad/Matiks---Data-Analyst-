@@ -1,0 +1,5 @@
+git init
+git add .
+git commit -m "Initial dashboard commit"
+git remote add origin https://github.com/<your-username>/matiks-analytics-dashboard.git
+git push -u origin main
