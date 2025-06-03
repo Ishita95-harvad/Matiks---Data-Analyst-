@@ -25,6 +25,11 @@ cd matiks
 
 pip install -r requirements.txt
 
+git init
+git add .
+git commit -m "Initial dashboard commit"
+git remote add origin https://github.com/<Ishita95-harvad>/matiks-analytics-dashboard.git
+git push -u origin main
 
 ### Usage
 
