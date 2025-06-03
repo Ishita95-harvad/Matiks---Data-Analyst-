@@ -23,16 +23,8 @@ git clone https://github.com/Matiks---Data-Analyst-/matiks.git
 
 cd matiks
 
-pip install -r requirements.txt
+pip install -r requirement.txt 
 
-ash
-
-
-git init
-git add .
-git commit -m "Initial dashboard commit"
-git remote add origin https://github.com/<your-username>/matiks-analytics-dashboard.git
-git push -u origin main
 ### Usage
 
 from matiks import Analyzer
