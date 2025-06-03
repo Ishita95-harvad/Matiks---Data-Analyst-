@@ -1,0 +1,3 @@
+import plotly.express as px
+fig = px.line(...)  # From the Streamlit code
+fig.write_html("revenue_trend.html")
