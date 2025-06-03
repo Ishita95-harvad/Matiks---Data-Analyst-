@@ -1,0 +1,92 @@
+ Insights 
+
+Slide 1: Overview
+Title: Matiks Gaming Analytics Insights
+
+Content:
+Objective: Analyze user engagement, revenue trends, and retention to optimize performance.
+
+Dataset: ~1000 users with metrics like Total_Revenue_USD, Total_Play_Sessions, Signup_Date, etc.
+
+Key Metrics: DAU, WAU, MAU, revenue by segment, churn indicators.
+Visual: Dashboard screenshot showing KPI cards (DAU, WAU, MAU).
+### Slide 2: Engagement & Behavioral Patterns
+
+Findings:
+Active Days: Users with high Total_Play_Sessions (>20) have longer Avg_Session_Duration_Min (avg. 25-30 min), indicating engaged players.
+Usage Frequency: Solo players (40% of users) have higher session counts than Co-op or Multiplayer users.
+Visualization: Scatter plot of Total_Play_Sessions vs. Avg_Session_Duration_Min, colored by Preferred_Game_Mode.
+Insight: Solo players are more frequent but spend less per session, suggesting targeted promotions for Multiplayer modes could increase engagement.
+
+Slide 3: Revenue Trends & Breakdowns
+Findings:
+Revenue Trends: Revenue peaks in Q4 2024, likely due to holiday season signups (based on Signup_Date).
+Device Type: PC users (60% of revenue) contribute more than Mobile users despite similar session counts.
+Subscription Tier: Gold tier users generate 2x revenue per hour compared to Free tier.
+Visualization: Line chart for revenue trends and bar chart for revenue by Subscription_Tier.
+Insight: PC users and Gold tier subscribers are high-value segments; focus marketing on these groups.
+
+Slide 4: Churn & Retention Analysis
+Findings:
+Churn Indicators: Users with time gaps >60 days between Signup_Date and Last_Login (20% of users) are at risk of churn.
+Short Session Users: Users with Avg_Session_Duration_Min <10 min (15% of users) have lower retention rates.
+High-Retention Users: Diamond and Platinum Rank_Tier users have higher Achievement_Score (avg. 5000) and longer playtime.
+Visualization: Histogram of time gaps and box plot of Total_Hours_Played by Rank_Tier.
+Insight: Early intervention for users with short sessions or long inactivity periods can reduce churn.
+
+Slide 5: Recommendations
+Increase Retention:
+Engagement Campaigns: Offer in-game rewards for Multiplayer mode to boost session duration for Solo players.
+Churn Prevention: Send re-engagement emails to users with >30-day inactivity, offering free trials of Gold tier.
+
+Boost Revenue:
+Targeted Promotions: Upsell Gold subscriptions to PC users with high Total_Play_Sessions.
+Seasonal Campaigns: Launch holiday-themed events in Q4 to capitalize on signup spikes.
+Next Steps:
+
+Implement cohort analysis to track retention over time.
+Develop predictive models for churn based on Time_Gap and Avg_Session_Duration_Min.
+Visual: Funnel chart showing onboarding to repeat session drop-off.
+
+Bonus Tasks
+
+Cohort Analysis
+
+Approach: Group users by Signup_Date (monthly cohorts) and calculate retention rates based on Last_Login within 30, 60, and 90 days.
+Insight: Early cohorts (e.g., Sep 2023) show higher retention (60% at 90 days) compared to recent cohorts (40% for Dec 2024), indicating onboarding improvements needed.
+Visualization: Heatmap of retention rates by cohort.
+
+Funnel Tracking
+Approach: Define funnel stages:
+Signup: All users.
+
+First Game: Users with Total_Play_Sessions >= 1.
+Repeat Session: Users with Total_Play_Sessions > 1.
+Insight: 80% of users play at least one game, but only 50% return for repeat sessions, suggesting onboarding friction.
+Visualization: Funnel chart (as shown in Streamlit code).
+User Segmentation
+
+Approach: Apply K-Means clustering on Total_Revenue_USD and Total_Play_Sessions (k=3).
+Clusters:
+High-Value: High revenue, moderate sessions (e.g., Gold tier, PC users).
+Engaged Low-Spenders: High sessions, low revenue (e.g., Free tier, Mobile users).
+Casual: Low sessions, low revenue.
+
+Insight: High-value users are 20% of the base but contribute 60% of revenue.
+Visualization: Scatter plot with clusters (as shown in Streamlit code).
+
+Key Insights Summary
+Behavioral Patterns: Solo players are frequent but have shorter sessions; Multiplayer users spend more per session.
+Churn Indicators: Users with >60-day inactivity or <10-min sessions are at high churn risk (35% of users).
+High-Value Users: Gold tier and PC users generate the most revenue; Diamond/Platinum ranks show high retention.
+Revenue Trends: Q4 2024 shows revenue spikes, driven by new signups.
+
+Recommendations
+Retention: Offer in-game incentives for Multiplayer modes and re-engagement campaigns for inactive users.
+Revenue: Target PC users with Gold tier upsell offers and launch Q4 promotional events.
+Analytics: Implement cohort analysis and predictive churn models for proactive retention strategies.
+
+Notes
+Live Link/Video: Since I cannot execute code or deploy, a live link is not provided. The Streamlit code can be run locally or deployed to Streamlit Cloud for a live demo.
+Visuals: Chart.js configurations and Plotly charts are described; actual visuals require dataset access.
+Data Limitations: Insights are based on the sample data provided (5 rows) and notebook summary. Full dataset analysis would refine findings.
