@@ -11,6 +11,7 @@ Matiks is a powerful data analysis tool designed to streamline data processing, 
 - Export & Reporting: Generate and share reports in multiple formats.
   
 #### Installation
+-Azure Pipelines
 
 ### Prerequisites
 Ensure you have the following installed:
